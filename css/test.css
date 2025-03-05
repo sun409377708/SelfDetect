@@ -6,6 +6,7 @@
     justify-content: space-between;
     height: 100%;
     padding: 20px;
+    background-color: #ffffff; /* u6d45u8272u80ccu666f */
 }
 
 /* u5fc3u7387u4eeau8868u76d8 */
@@ -16,7 +17,7 @@
     margin: 30px auto;
 }
 
-/* u5916u5708u8fdbु5ea6u6761 */
+/* u5916u5708u8fdbu5ea6u6761 */
 .progress-ring {
     position: absolute;
     top: 0;
@@ -34,7 +35,7 @@
 }
 
 .progress-ring .bg {
-    stroke: rgba(255, 255, 255, 0.1);
+    stroke: rgba(0, 0, 0, 0.1); /* u6539u4e3au6d45u8272u80ccu666f */
 }
 
 .progress-ring .progress {
@@ -76,7 +77,7 @@
 .test-step {
     text-align: center;
     margin: 20px 0;
-    color: #ffcc00;
+    color: #333333; /* u6539u4e3au6df1u8272u6587u5b57 */
     font-size: 18px;
     font-weight: 500;
 }
@@ -86,7 +87,7 @@
     text-align: center;
     margin: 15px 0;
     padding: 0 20px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(0, 0, 0, 0.7); /* u6539u4e3au6d45u8272u80ccu666f */
     font-size: 14px;
     line-height: 1.5;
 }
@@ -132,4 +133,47 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+/* u6d4bu8bd5u6309u94ae */
+.test-btn {
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #ff4081;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(255, 64, 129, 0.3);
+}
+
+.test-btn:hover, .test-btn:active {
+    background-color: #e03b72;
+    box-shadow: 0 6px 12px rgba(255, 64, 129, 0.4);
+}
+
+.test-btn.disabled {
+    background-color: #cccccc;
+    color: #666666;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+/* u6d4bu8bd5u8bf4u660e */
+.test-instructions {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.05); /* u6539u4e3au6d45u8272u80ccu666f */
+    border-radius: 10px;
+    color: #333333; /* u6539u4e3au6df1u8272u6587u5b57 */
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 90%;
 }

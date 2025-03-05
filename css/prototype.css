@@ -36,19 +36,95 @@ body {
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 30px;
+    margin-bottom: 50px; /* 增加底部间距 */
+}
+
+/* 视觉容器特定样式 */
+.vision-container {
+    max-width: 1800px; /* 增加容器宽度 */
+    width: 98%;
+    margin: 0 auto;
+}
+
+.vision-container .prototype-screens {
+    display: flex;
+    flex-wrap: nowrap; /* 禁止换行 */
+    justify-content: center; /* 居中对齐 */
+    padding-bottom: 20px; /* 增加底部内边距 */
+    margin-bottom: 60px; /* 增加底部间距 */
+}
+
+.vision-container .phone-frame {
+    width: 300px; /* 调整手机框架宽度 */
+    height: 600px; /* 调整手机框架高度 */
+    margin-right: 20px; /* 增加右侧间距 */
+}
+
+.vision-container .phone-frame:last-child {
+    margin-right: 0; /* 最后一个手机框架不需要右侧间距 */
+}
+
+/* 视觉容器中手机框架的响应式设计 */
+@media (max-width: 1600px) {
+    .vision-container .phone-frame {
+        width: 280px;
+        height: 560px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .vision-container .phone-frame {
+        width: 260px;
+        height: 520px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .prototype-screens {
+        overflow-x: auto; /* 允许水平滚动 */
+        justify-content: flex-start; /* 左对齐 */
+        -webkit-overflow-scrolling: touch; /* 在iOS上启用触摸滚动 */
+        scrollbar-width: thin; /* Firefox滚动条样式 */
+    }
+    
+    .scroll-hint {
+        display: block; /* 显示滚动提示 */
+    }
+}
+
+/* 视觉容器滚动条样式 */
+.vision-container .prototype-screens::-webkit-scrollbar {
+    height: 8px;
+}
+
+.vision-container .prototype-screens::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.vision-container .prototype-screens::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.vision-container .prototype-screens::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
 }
 
 /* 手机框架样式 */
 .phone-frame {
     position: relative;
-    width: 300px;
-    height: 600px;
-    background-color: #111;
+    width: 300px; /* 固定宽度 */
+    height: 600px; /* 固定高度 */
+    background-color: #f8f8f8; /* 改为浅色背景 */
     border-radius: 30px;
     padding: 10px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* 减轻阴影 */
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px; /* 增加底部间距，为标题留出空间 */
 }
 
 .phone-header {
@@ -67,7 +143,7 @@ body {
 
 .phone-screen {
     flex: 1;
-    background-color: #121212;
+    background-color: #ffffff; /* 改为白色背景 */
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -89,13 +165,18 @@ body {
 
 .screen-label {
     position: absolute;
-    bottom: -30px;
+    bottom: -35px;
     left: 0;
     right: 0;
     text-align: center;
     color: #333;
     font-size: 16px;
     font-weight: 500;
+}
+
+/* 心率测试容器特定样式 */
+.heart-rate-container {
+    padding-bottom: 50px; /* 增加底部内边距 */
 }
 
 /* 响应式设计 */
@@ -110,6 +191,40 @@ body {
     }
 }
 
+@media (max-width: 1200px) {
+    .prototype-screens {
+        margin-bottom: 60px; /* 在小屏幕上增加更多底部间距 */
+    }
+    
+    .phone-frame {
+        margin-bottom: 50px; /* 在小屏幕上增加更多底部间距 */
+    }
+}
+
+@media (max-width: 768px) {
+    .prototype-container {
+        padding: 15px;
+    }
+    
+    .prototype-title {
+        font-size: 24px;
+    }
+    
+    .prototype-description {
+        font-size: 14px;
+    }
+    
+    .phone-frame {
+        width: 280px;
+        height: 560px;
+        margin-bottom: 60px; /* 在更小的屏幕上增加更多底部间距 */
+    }
+    
+    .screen-label {
+        bottom: -40px; /* 在更小的屏幕上调整标题位置 */
+    }
+}
+
 /* 状态栏样式 */
 .prototype-status-bar {
     display: flex;
@@ -119,4 +234,19 @@ body {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 滚动提示 */
+.scroll-hint {
+    text-align: center;
+    margin: 10px 0 20px;
+    color: #666;
+    font-size: 14px;
+    display: none; /* 默认隐藏 */
+}
+
+@media (max-width: 1200px) {
+    .scroll-hint {
+        display: block; /* 在小屏幕上显示滚动提示 */
+    }
 }

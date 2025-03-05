@@ -1,4 +1,4 @@
-/* u5fc3u7387u7ed3u679cu9875u9762u6837u5f0f */
+/* 心率结果页面样式 */
 .result-page {
     display: flex;
     flex-direction: column;
@@ -6,9 +6,10 @@
     justify-content: space-between;
     height: 100%;
     padding: 20px;
+    background-color: #ffffff; /* 浅色背景 */
 }
 
-/* u5fc3u7387u6570u5b57u663eu793a */
+/* 心率数字显示 */
 .heart-rate-display {
     display: flex;
     flex-direction: column;
@@ -19,7 +20,7 @@
 .heart-rate-value {
     font-size: 72px;
     font-weight: 700;
-    color: #ffffff;
+    color: #ff4081; /* 改为粉红色而不是白色 */
     display: flex;
     align-items: baseline;
 }
@@ -27,11 +28,11 @@
 .heart-rate-unit {
     font-size: 24px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 64, 129, 0.7); /* 改为半透明粉红色 */
     margin-left: 8px;
 }
 
-/* u5065u5eb7u72b6u6001u6807u7b7e */
+/* 健康状态标签 */
 .health-status {
     margin: 15px 0;
     padding: 8px 20px;
@@ -40,6 +41,7 @@
     font-weight: 500;
     text-align: center;
     transition: all 0.3s ease;
+    color: #333; /* 改为深灰色 */
 }
 
 .status-normal {
@@ -60,20 +62,20 @@
     border: 1px solid rgba(255, 59, 48, 0.3);
 }
 
-/* u5065u5eb7u5efau8bae */
+/* 健康建议 */
 .health-advice {
     text-align: center;
     margin: 20px 0;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
-    color: #ffffff;
+    color: #333; /* 改为深灰色 */
     font-size: 16px;
     line-height: 1.5;
     max-width: 90%;
 }
 
-/* u5386u53f2u8bb0u5f55u94feu63a5 */
+/* 历史记录链接 */
 .history-link {
     margin: 20px 0;
     text-decoration: none;
@@ -91,7 +93,7 @@
     transform: translateX(5px);
 }
 
-/* u5fc3u7387u6570u5b57u52a8u753b */
+/* 心率数字动画 */
 @keyframes numberChange {
     0% {
         transform: translateY(20px);
@@ -107,7 +109,7 @@
     animation: numberChange 0.5s ease-out;
 }
 
-/* u5fc3u810fu56feu6807u548cu5fc3u7535u56feu6ce2u5f62 */
+/* 心率图标容器 */
 .result-heart-container {
     position: relative;
     width: 100%;

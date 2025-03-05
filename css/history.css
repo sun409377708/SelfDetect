@@ -4,6 +4,7 @@
     flex-direction: column;
     height: 100%;
     padding: 20px;
+    background-color: #ffffff; /* 浅色背景 */
 }
 
 .history-header {
@@ -16,7 +17,7 @@
 .history-title {
     font-size: 24px;
     font-weight: 600;
-    color: #ffffff;
+    color: #333333; /* 改为深色文字 */
 }
 
 .export-btn {
@@ -42,10 +43,10 @@
     width: 100%;
     height: 200px;
     margin: 20px 0;
-    background-color: #1e1e1e;
+    background-color: #f5f5f5; /* 改为浅灰色背景 */
     border-radius: 12px;
     padding: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 减轻阴影 */
 }
 
 /* u5386u53f2u8bb0u5f55u5217u8868 */
@@ -61,16 +62,16 @@
     align-items: center;
     padding: 15px;
     margin-bottom: 10px;
-    background-color: #1e1e1e;
+    background-color: #f5f5f5; /* 改为浅灰色背景 */
     border-radius: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .history-item:hover {
-    background-color: #2a2a2a;
+    background-color: #e5e5e5; /* 改为浅灰色背景 */
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 减轻阴影 */
 }
 
 .history-item-left {
@@ -80,21 +81,21 @@
 
 .history-item-date {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
+    color: #666666; /* 改为深灰色文字 */
     margin-bottom: 5px;
 }
 
 .history-item-rate {
     font-size: 20px;
     font-weight: 600;
-    color: #ffffff;
+    color: #333333; /* 改为深色文字 */
     display: flex;
     align-items: baseline;
 }
 
 .history-item-unit {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.6);
+    color: #666666; /* 改为深灰色文字 */
     margin-left: 5px;
 }
 
@@ -103,6 +104,7 @@
     border-radius: 15px;
     font-size: 12px;
     font-weight: 500;
+    color: #333333; /* 改为深色文字 */
 }
 
 /* u8be6u7ec6u4fe1u606fu6a21u6001u6846 */
@@ -130,10 +132,10 @@
 .detail-content {
     width: 90%;
     max-width: 400px;
-    background-color: #1e1e1e;
+    background-color: #ffffff; /* 改为浅色背景 */
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* 减轻阴影 */
     transform: translateY(50px);
     transition: all 0.3s ease;
 }
@@ -152,20 +154,20 @@
 .detail-title {
     font-size: 20px;
     font-weight: 600;
-    color: #ffffff;
+    color: #333333; /* 改为深色文字 */
 }
 
 .close-btn {
     background: none;
     border: none;
-    color: rgba(255, 255, 255, 0.6);
+    color: #666666; /* 改为深灰色文字 */
     font-size: 24px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .close-btn:hover {
-    color: #ffffff;
+    color: #333333; /* 改为深色文字 */
 }
 
 .detail-info {
@@ -177,21 +179,21 @@
     justify-content: space-between;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #cccccc; /* 改为浅灰色边框 */
 }
 
 .detail-label {
-    color: rgba(255, 255, 255, 0.6);
+    color: #666666; /* 改为深灰色文字 */
 }
 
 .detail-value {
-    color: #ffffff;
+    color: #333333; /* 改为深色文字 */
     font-weight: 500;
 }
 
 .no-records {
     text-align: center;
-    color: rgba(255, 255, 255, 0.6);
+    color: #666666; /* 改为深灰色文字 */
     margin-top: 50px;
     font-size: 16px;
 }
