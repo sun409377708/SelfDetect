@@ -1,0 +1,135 @@
+/* u5fc3u7387u6d4bu8bd5u9875u9762u6837u5f0f */
+.test-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+}
+
+/* u5fc3u7387u4eeau8868u76d8 */
+.heart-monitor {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    margin: 30px auto;
+}
+
+/* u5916u5708u8fdbु5ea6u6761 */
+.progress-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.progress-ring circle {
+    fill: transparent;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+.progress-ring .bg {
+    stroke: rgba(255, 255, 255, 0.1);
+}
+
+.progress-ring .progress {
+    stroke: #ff4081;
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+/* u5fc3u810fu56feu6807 */
+.heart-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    color: #ff3b30;
+    animation: pulse 1.2s infinite ease-in-out;
+}
+
+/* u5fc3u7535u56feu6ce2u5f62 */
+.ecg-wave {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    transform: translateY(20px);
+}
+
+.ecg-line {
+    fill: none;
+    stroke: #4cd964;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* u6d4bu8bd5u6b65u9aa4u63d0u793a */
+.test-step {
+    text-align: center;
+    margin: 20px 0;
+    color: #ffcc00;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* u5065u5eb7u5efau8baeu6587u5b57 */
+.health-tip {
+    text-align: center;
+    margin: 15px 0;
+    padding: 0 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* u5fc3u810fu8df3u52a8u52a8u753b */
+@keyframes heartbeat {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    15% {
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+    30% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    45% {
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+    60% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.heart-icon.beating {
+    animation: heartbeat 1.2s infinite;
+}
+
+/* u4eeau8868u76d8u5185u5708 */
+.inner-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(30, 30, 30, 0.8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}

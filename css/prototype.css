@@ -1,0 +1,122 @@
+/* 原型展示页面样式 */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+.prototype-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.prototype-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.prototype-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.prototype-screens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* 手机框架样式 */
+.phone-frame {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background-color: #111;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-header {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-speaker {
+    width: 60px;
+    height: 5px;
+    background-color: #222;
+    border-radius: 3px;
+}
+
+.phone-screen {
+    flex: 1;
+    background-color: #121212;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.phone-footer {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-home-button {
+    width: 40px;
+    height: 4px;
+    background-color: #222;
+    border-radius: 2px;
+}
+
+.screen-label {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 1000px) {
+    .prototype-screens {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .phone-frame {
+        margin-bottom: 50px;
+    }
+}
+
+/* 状态栏样式 */
+.prototype-status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
+}

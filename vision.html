@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>视力测试原型</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/result.css">
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="stylesheet" href="css/prototype.css">
+    <link rel="stylesheet" href="css/fixes.css">
+    <link rel="stylesheet" href="css/vision.css">
+</head>
+<body>
+    <div class="prototype-container vision-container">
+        <h1 class="prototype-title">视力测试应用原型</h1>
+        <div class="prototype-description">手机端视力测试应用界面原型展示</div>
+        
+        <div class="prototype-screens">
+            <!-- 视力测试（E e）页面 -->
+            <div class="phone-frame">
+                <div class="phone-header">
+                    <div class="phone-speaker"></div>
+                </div>
+                <div class="phone-screen" id="vision-e-screen">
+                    <!-- 视力测试页内容将通过JavaScript加载 -->
+                </div>
+                <div class="phone-footer">
+                    <div class="phone-home-button"></div>
+                </div>
+                <div class="screen-label">视力测试（E字）页面</div>
+            </div>
+            
+            <!-- 色盲测试页面 -->
+            <div class="phone-frame">
+                <div class="phone-header">
+                    <div class="phone-speaker"></div>
+                </div>
+                <div class="phone-screen" id="color-blind-screen">
+                    <!-- 色盲测试页内容将通过JavaScript加载 -->
+                </div>
+                <div class="phone-footer">
+                    <div class="phone-home-button"></div>
+                </div>
+                <div class="screen-label">色盲测试页面</div>
+            </div>
+            
+            <!-- 散光测试页面 -->
+            <div class="phone-frame">
+                <div class="phone-header">
+                    <div class="phone-speaker"></div>
+                </div>
+                <div class="phone-screen" id="astigmatism-screen">
+                    <!-- 散光测试页内容将通过JavaScript加载 -->
+                </div>
+                <div class="phone-footer">
+                    <div class="phone-home-button"></div>
+                </div>
+                <div class="screen-label">散光测试页面</div>
+            </div>
+            
+            <!-- 颜色敏感度测试页面 -->
+            <div class="phone-frame">
+                <div class="phone-header">
+                    <div class="phone-speaker"></div>
+                </div>
+                <div class="phone-screen" id="color-sensitivity-screen">
+                    <!-- 颜色敏感度测试页内容将通过JavaScript加载 -->
+                </div>
+                <div class="phone-footer">
+                    <div class="phone-home-button"></div>
+                </div>
+                <div class="screen-label">颜色敏感度测试页面</div>
+            </div>
+            
+            <!-- 视力测试选择页面 -->
+            <div class="phone-frame" style="display: none;">
+                <div class="phone-header">
+                    <div class="phone-speaker"></div>
+                </div>
+                <div class="phone-screen" id="vision-selection-screen">
+                    <div id="vision-test-selection" class="vision-screen">
+                        <div class="vision-test-header">
+                            <button class="back-btn" id="vision-back-to-main">返回</button>
+                            <h2 class="vision-test-title">视力测试</h2>
+                        </div>
+                        <div class="vision-test-options">
+                            <div class="vision-test-option" data-test="e-test">
+                                <div class="vision-test-option-icon">E</div>
+                                <div class="vision-test-option-name">视力测试(E字)</div>
+                            </div>
+                            <div class="vision-test-option" data-test="color-blind-test">
+                                <div class="vision-test-option-icon">C</div>
+                                <div class="vision-test-option-name">色盲测试</div>
+                            </div>
+                            <div class="vision-test-option" data-test="astigmatism-test">
+                                <div class="vision-test-option-icon">A</div>
+                                <div class="vision-test-option-name">散光测试</div>
+                            </div>
+                            <div class="vision-test-option" data-test="color-sensitivity-test">
+                                <div class="vision-test-option-icon">S</div>
+                                <div class="vision-test-option-name">颜色敏感度测试</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone-footer">
+                    <div class="phone-home-button"></div>
+                </div>
+                <div class="screen-label">视力测试选择页面</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 核心脚本 -->
+    <script src="js/main.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/prototype.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/vision.js"></script>
+</body>
+</html>
